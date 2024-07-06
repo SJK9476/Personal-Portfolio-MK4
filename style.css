@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Tiny5&display=swap');
+
+:root {
+--black: #080708ff;
+--blue-crayola: #3772ffff;
+--red: #df2935ff;
+--sun-yellow: #fdca40ff;
+--white: #e6e8e6ff;
+
+--ff-title: 'Lobster Two', cursive;
+--ff-text: 'Actor', sans-serif;
+--ff-logo: 'Tiny5', monospace;
+
+--logo-gradient: -webkit-linear-gradient( var(--sun-yellow), var(--blue-crayola));
+}
+
+/* CSS RESET */
+
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+/* END RESET */
+
+/* PAGE STYLING */
+
+body{
+    font-family: var(--ff-text);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.container{
+    max-width: 100vw;
+    height: 100vh;
+    margin-inline: auto;
+    padding-inline: 1em;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    font-size: 1.75rem;
+    background: var(--logo-gradient);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
