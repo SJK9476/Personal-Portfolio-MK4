@@ -12,6 +12,7 @@
 --ff-logo: 'Tiny5', monospace;
 
 --logo-gradient: -webkit-linear-gradient( var(--sun-yellow), var(--blue-crayola));
+--title-gradient: -webkit-linear-gradient( 45deg, var(--sun-yellow), var(--red), var(--blue-crayola));
 }
 
 /* CSS RESET */
@@ -92,6 +93,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
+    margin-bottom: 1.5rem;
 }
 
 .nav-bar ul {
@@ -108,12 +110,112 @@ body{
     color: var(--white);
 }
 
+.nav-bar a:hover {
+    color: var(--blue-crayola);
+    transition: 0.3s;
+}
+
 .logo {
-    font-family: var(--ff-logo);
+    font-family: var(--ff-title);
     font-size: 1.75rem;
     background: var(--logo-gradient);
-    text-transform: uppercase;
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.hire {
+    color: var(--red);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.heading {
+    font-family: var(--ff-title);
+    font-size: 3em;
+    text-wrap: pretty;
+    background: var(--title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hero-text .heading{
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.25em;
+    text-wrap: pretty;
+    max-width: 70%;
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+.hero-text button {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--blue-crayola);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: var(--red);
+    transition: 0.3s ease all;
+}
+
+.hero-profile {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-profile img {
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid var(--blue-crayola);
+    
+}
+
+@media screen and (max-width: 780px) {
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-profile img {
+        width: 80%;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+.fa-brands:hover {
+    color: var(--sun-yellow);
+    transition: 0.3s ease all;
+}
