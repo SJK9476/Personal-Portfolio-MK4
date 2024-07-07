@@ -98,7 +98,8 @@ body{
 
 .nav-bar ul {
     display: flex;
-    gap: 1.5em;
+    gap: 2em;
+    margin-right: 5%;
 }
 
 .nav-bar li {
@@ -110,22 +111,34 @@ body{
     color: var(--white);
 }
 
+
+
 .nav-bar a:hover {
     color: var(--blue-crayola);
     transition: 0.3s;
 }
 
 .logo {
-    font-family: var(--ff-title);
+    font-family: var(--ff-logo);
     font-size: 1.75rem;
     background: var(--logo-gradient);
-    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hire {
-    color: var(--red);
+.email {
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    
+}
+
+.email i {
+    color: var(--sun-yellow);
+}
+
+.email i:hover {
+    color: var(--blue-crayola);
+    transition: 0.3s;
 }
 
 main {
@@ -175,7 +188,8 @@ main {
 }
 
 .hero-text button:hover {
-    background-color: var(--red);
+    background-color: var(--sun-yellow);
+    color: black;
     transition: 0.3s ease all;
 }
 
@@ -189,7 +203,8 @@ main {
     height: 375px;
     border-radius: 50%;
     object-fit: cover;
-    border: 10px solid var(--blue-crayola);
+    border: 5px solid var(--white);
+    box-shadow: var(--white) 0px 5px 15px;
     
 }
 
@@ -213,9 +228,11 @@ main {
 .social-icons i {
     font-size: 1.5em;
     color: var(--white);
+    border-radius: 50%;
 }
 
 .fa-brands:hover {
     color: var(--sun-yellow);
+    box-shadow: var(--white) 0px 2px 10px;
     transition: 0.3s ease all;
 }
