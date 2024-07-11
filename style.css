@@ -232,7 +232,6 @@ main {
 }
 
 .fa-brands:hover {
-    color: var(--sun-yellow);
-    box-shadow: var(--white) 0px 2px 10px;
+    box-shadow: var(--white) 0px 0px 20px;
     transition: 0.3s ease all;
 }
