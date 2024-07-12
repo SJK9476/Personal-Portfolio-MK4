@@ -3,10 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <script src="https://kit.fontawesome.com/bd47ea96a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><a href="#">King<span>DEV</span></a></div>
+            <ul>
+                <li><a href="mailto:samueljamesking94@gmail.com" target="_blank" class="email"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="index.html" class="contact">Home</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
+                
+            </ul>
+        </div>
+    </header>
     <div class="container">
         <div class="card">
             <div class="card-content">
@@ -22,6 +34,7 @@
             </div>
         </div>
          <div class="contact-form">
+            <p class="title">Contact Me</p>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="50817030-1b77-42d2-89ff-1f08f89eecc4">
                 <input type="text" name="name" placeholder="Your Name" required="">
